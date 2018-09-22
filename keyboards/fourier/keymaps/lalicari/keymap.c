@@ -9,6 +9,7 @@ extern keymap_config_t keymap_config;
 #define _BASE 0
 #define _FN1 1
 #define _FN2 2
+#define _FN3 3
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -26,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_DEL,  KC_BSPC,
     KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCOLON,        KC_QUOTE,
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,             KC_M,    KC_COMM, KC_DOT,  KC_SLSH, RSFT_T(KC_ENT),
-    KC_LCTL, KC_LALT, KC_FN1, KC_FN1,  KC_SPFN1,         KC_SPC,                  KC_RGUI, KC_RALT, KC_FN2,  KC_RCTL
+    KC_LCTL, KC_LALT, KC_FN1,  KC_FN1,  KC_SPFN1,         KC_SPC,                    KC_RGUI, KC_RALT, KC_FN2,  KC_RCTL
   ),
 
   [_FN1] = LAYOUT(
@@ -41,6 +42,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, KC_INS,  KC_PGUP, KC_HOME, _______, _______, _______, _______, KC_COLN,          _______,
     _______, _______, _______, KC_DEL,  KC_PGDN, KC_END,  _______,          _______, _______, _______, _______, _______,
     _______, _______, _______, _______, KC_DEL,           _______,                   _______, _______, _______, _______
+  ),
+
+  [_FN3] = LAYOUT(
+    KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_DEL,  KC_BSPC,
+    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCOLON,        KC_QUOTE,
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,             KC_M,    KC_COMM, KC_DOT,  KC_SLSH, RSFT_T(KC_ENT),
+    KC_FN1,  KC_LALT, KC_LGUI, KC_LGUI, KC_SPFN1,         KC_SPC,                    KC_RGUI, KC_RALT, KC_FN2,  KC_RCTL
   )
 
 };
