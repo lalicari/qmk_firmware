@@ -1,0 +1,8 @@
+ifndef QUANTUM_DIR
+	include ../../../../Makefile
+endif
+<<<<<<< HEAD:keyboards/fourier/keymaps/lalicari/rules.mk
+
+BOOTMAGIC_ENABLE = yes
+=======
+>>>>>>> a8398ef30bea61bad2734305b0dfb5c0648a11fe:keyboards/fourier/keymaps/lalicari/rules.mk
