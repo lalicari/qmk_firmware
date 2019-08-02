@@ -1,0 +1,3 @@
+SRC += muse.c
+COMMAND_ENABLE = no
+SPACE_CADET_ENABLE = yes
